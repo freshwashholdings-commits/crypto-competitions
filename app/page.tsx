@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Home() {
   const [competitionName, setCompetitionName] = useState('')
@@ -51,6 +52,18 @@ const handleCreateCompetition = async (e: React.FormEvent) => {
             Track your memecoin trading competitions
           </p>
         </div>
+
+        {/* View Leaderboard Button */}
+        <div className="text-center mb-8">
+          <Link 
+            href="/leaderboard"
+            className="inline-block bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold py-3 px-8 rounded-lg hover:from-yellow-600 hover:to-orange-600 transform hover:scale-105 transition-all duration-200 shadow-lg"
+          >
+            🏆 View Leaderboard
+          </Link>
+        </div>
+
+        {/* Create Competition Form */}
 
         {/* Create Competition Form */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-white/20">
