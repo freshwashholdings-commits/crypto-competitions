@@ -1,0 +1,5 @@
+httpx>=0.27
+SQLAlchemy>=2.0
+networkx>=3.2
+click>=8.1
+pytest>=8.0
